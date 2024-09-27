@@ -14,7 +14,7 @@ class Solution:
         total = 0
         prev_value = 0
         
-        # Iterate through the string of Roman numerals
+    
         for char in s:
             current_value = roman_to_int[char]
             
