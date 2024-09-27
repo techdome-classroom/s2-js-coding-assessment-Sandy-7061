@@ -18,7 +18,7 @@ class Solution:
         for char in s:
             current_value = roman_to_int[char]
             
-            # If the current value is greater than the previous value, it indicates subtraction
+            
             if current_value > prev_value:
                 total += current_value - 2 * prev_value
             else:
