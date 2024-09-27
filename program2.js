@@ -1,6 +1,5 @@
 class Solution:
     def romanToInt(self, s: str) -> int:
-        # Define a mapping from Roman numerals to integers
         roman_to_int = {
             'I': 1,
             'V': 5,
@@ -14,17 +13,12 @@ class Solution:
         total = 0
         prev_value = 0
         
-    
         for char in s:
             current_value = roman_to_int[char]
-            
-            
             if current_value > prev_value:
                 total += current_value - 2 * prev_value
             else:
                 total += current_value
-                
-    
             prev_value = current_value
         
         return total
